@@ -56,10 +56,10 @@ namespace Decoder {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Open Sans", 23F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 35);
+            this.label1.Size = new System.Drawing.Size(232, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "Decodificador";
             // 
@@ -102,11 +102,11 @@ namespace Decoder {
             // 
             this.copiedDecodeAlert.AutoSize = true;
             this.copiedDecodeAlert.BackColor = System.Drawing.Color.Transparent;
-            this.copiedDecodeAlert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copiedDecodeAlert.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copiedDecodeAlert.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.copiedDecodeAlert.Location = new System.Drawing.Point(33, 188);
             this.copiedDecodeAlert.Name = "copiedDecodeAlert";
-            this.copiedDecodeAlert.Size = new System.Drawing.Size(151, 13);
+            this.copiedDecodeAlert.Size = new System.Drawing.Size(164, 15);
             this.copiedDecodeAlert.TabIndex = 21;
             this.copiedDecodeAlert.Text = "Texto copiado al Portapapeles";
             this.copiedDecodeAlert.Visible = false;
@@ -115,15 +115,15 @@ namespace Decoder {
             // 
             this.decodeValue.AutoSize = true;
             this.decodeValue.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.decodeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.decodeValue.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.decodeValue.Location = new System.Drawing.Point(36, 217);
             this.decodeValue.Name = "decodeValue";
-            this.decodeValue.Size = new System.Drawing.Size(0, 25);
+            this.decodeValue.Size = new System.Drawing.Size(0, 27);
             this.decodeValue.TabIndex = 20;
             // 
             // letterToDecode
             // 
-            this.letterToDecode.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.letterToDecode.Font = new System.Drawing.Font("Open Sans", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letterToDecode.FormattingEnabled = true;
             this.letterToDecode.Items.AddRange(new object[] {
             "A",
@@ -154,42 +154,42 @@ namespace Decoder {
             "Z"});
             this.letterToDecode.Location = new System.Drawing.Point(340, 98);
             this.letterToDecode.Name = "letterToDecode";
-            this.letterToDecode.Size = new System.Drawing.Size(121, 28);
+            this.letterToDecode.Size = new System.Drawing.Size(121, 31);
             this.letterToDecode.TabIndex = 18;
             this.letterToDecode.Text = "A";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(335, 70);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 25);
+            this.label8.Size = new System.Drawing.Size(122, 27);
             this.label8.TabIndex = 17;
             this.label8.Text = "Letra clave";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(31, 70);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 25);
+            this.label9.Size = new System.Drawing.Size(68, 27);
             this.label9.TabIndex = 16;
             this.label9.Text = "Texto";
             // 
             // textToDecode
             // 
-            this.textToDecode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textToDecode.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textToDecode.Location = new System.Drawing.Point(36, 98);
             this.textToDecode.Name = "textToDecode";
-            this.textToDecode.Size = new System.Drawing.Size(290, 30);
+            this.textToDecode.Size = new System.Drawing.Size(290, 35);
             this.textToDecode.TabIndex = 15;
             // 
             // buttonDecode
             // 
             this.buttonDecode.BackColor = System.Drawing.Color.RoyalBlue;
-            this.buttonDecode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDecode.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDecode.ForeColor = System.Drawing.Color.White;
             this.buttonDecode.Location = new System.Drawing.Point(36, 149);
             this.buttonDecode.Name = "buttonDecode";
@@ -289,11 +289,11 @@ namespace Decoder {
             // 
             this.copiedCodeAlert.AutoSize = true;
             this.copiedCodeAlert.BackColor = System.Drawing.Color.Transparent;
-            this.copiedCodeAlert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copiedCodeAlert.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copiedCodeAlert.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.copiedCodeAlert.Location = new System.Drawing.Point(33, 187);
             this.copiedCodeAlert.Name = "copiedCodeAlert";
-            this.copiedCodeAlert.Size = new System.Drawing.Size(151, 13);
+            this.copiedCodeAlert.Size = new System.Drawing.Size(164, 15);
             this.copiedCodeAlert.TabIndex = 22;
             this.copiedCodeAlert.Text = "Texto copiado al Portapapeles";
             this.copiedCodeAlert.Visible = false;
@@ -301,16 +301,16 @@ namespace Decoder {
             // codedValue
             // 
             this.codedValue.AutoSize = true;
-            this.codedValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codedValue.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codedValue.Location = new System.Drawing.Point(36, 216);
             this.codedValue.Name = "codedValue";
-            this.codedValue.Size = new System.Drawing.Size(0, 25);
+            this.codedValue.Size = new System.Drawing.Size(0, 27);
             this.codedValue.TabIndex = 8;
             // 
             // buttonCode
             // 
             this.buttonCode.BackColor = System.Drawing.Color.RoyalBlue;
-            this.buttonCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCode.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCode.ForeColor = System.Drawing.Color.White;
             this.buttonCode.Location = new System.Drawing.Point(36, 148);
             this.buttonCode.Name = "buttonCode";
@@ -322,7 +322,7 @@ namespace Decoder {
             // 
             // letterToCode
             // 
-            this.letterToCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.letterToCode.Font = new System.Drawing.Font("Open Sans", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letterToCode.FormattingEnabled = true;
             this.letterToCode.Items.AddRange(new object[] {
             "A",
@@ -353,45 +353,45 @@ namespace Decoder {
             "Z"});
             this.letterToCode.Location = new System.Drawing.Point(340, 97);
             this.letterToCode.Name = "letterToCode";
-            this.letterToCode.Size = new System.Drawing.Size(121, 28);
+            this.letterToCode.Size = new System.Drawing.Size(121, 31);
             this.letterToCode.TabIndex = 6;
             this.letterToCode.Text = "A";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Open Sans Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(335, 69);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 25);
+            this.label4.Size = new System.Drawing.Size(120, 27);
             this.label4.TabIndex = 5;
             this.label4.Text = "Letra clave";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Open Sans Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(31, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 25);
+            this.label3.Size = new System.Drawing.Size(66, 27);
             this.label3.TabIndex = 4;
             this.label3.Text = "Texto";
             // 
             // textToCode
             // 
-            this.textToCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textToCode.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textToCode.Location = new System.Drawing.Point(36, 97);
             this.textToCode.Name = "textToCode";
-            this.textToCode.Size = new System.Drawing.Size(290, 30);
+            this.textToCode.Size = new System.Drawing.Size(290, 35);
             this.textToCode.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 23.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 35);
+            this.label2.Size = new System.Drawing.Size(189, 42);
             this.label2.TabIndex = 2;
             this.label2.Text = "Codificador";
             // 
