@@ -21,9 +21,32 @@ namespace Decoder {
         }
 
         private void buttonCodeHandleClick(object sender, EventArgs e) {
-            codedValue.Text = textToCode.Text + "  " + letterToCode.Text;
+            string codedText = "";
+            foreach(char letter in textToCode.Text) {
+                codedText = codedText + codifyLetter(letter.ToString(), letterToCode.Text).ToString() + " ";
+            }
+            codedValue.Text = codedText;
+            Clipboard.SetText(codedText);
             copiedCodeAlert.Visible = true;
-            Clipboard.SetText("Hello, coded value");
         }
+
+        private double codifyLetter(string letter, string key) {
+            List<string> abecedario = new List<string>() { "a", "b","c", "d", "e", "f", "g", "h", "i", "j", "k",
+                "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+            double position = 0;
+            double multipliedPosition = 0;
+            foreach(string element in abecedario) {
+                if(element == letter) {
+                    position = abecedario.IndexOf(element);
+                }
+                if(element == key) {
+                    multipliedPosition = abecedario.IndexOf(element);
+                }
+            }
+            multipliedPosition = multipliedPosition * 0.5;
+            return position / 2 + 1.0 + multipliedPosition;
+        }
+
+     
     }
 }

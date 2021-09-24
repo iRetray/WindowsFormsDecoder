@@ -24,9 +24,11 @@ namespace Decoder {
         /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DecoderApp));
             this.label1 = new System.Windows.Forms.Label();
             this.Decodificador = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.copiedDecodeAlert = new System.Windows.Forms.Label();
             this.decodeValue = new System.Windows.Forms.Label();
             this.letterToDecode = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -38,6 +40,7 @@ namespace Decoder {
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.copiedCodeAlert = new System.Windows.Forms.Label();
             this.codedValue = new System.Windows.Forms.Label();
             this.buttonCode = new System.Windows.Forms.Button();
             this.letterToCode = new System.Windows.Forms.ComboBox();
@@ -45,8 +48,6 @@ namespace Decoder {
             this.label3 = new System.Windows.Forms.Label();
             this.textToCode = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.copiedDecodeAlert = new System.Windows.Forms.Label();
-            this.copiedCodeAlert = new System.Windows.Forms.Label();
             this.Decodificador.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -96,6 +97,19 @@ namespace Decoder {
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Decodificador";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // copiedDecodeAlert
+            // 
+            this.copiedDecodeAlert.AutoSize = true;
+            this.copiedDecodeAlert.BackColor = System.Drawing.Color.Transparent;
+            this.copiedDecodeAlert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copiedDecodeAlert.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.copiedDecodeAlert.Location = new System.Drawing.Point(33, 188);
+            this.copiedDecodeAlert.Name = "copiedDecodeAlert";
+            this.copiedDecodeAlert.Size = new System.Drawing.Size(151, 13);
+            this.copiedDecodeAlert.TabIndex = 21;
+            this.copiedDecodeAlert.Text = "Texto copiado al Portapapeles";
+            this.copiedDecodeAlert.Visible = false;
             // 
             // decodeValue
             // 
@@ -271,6 +285,19 @@ namespace Decoder {
             this.tabPage2.Text = "Codificador";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // copiedCodeAlert
+            // 
+            this.copiedCodeAlert.AutoSize = true;
+            this.copiedCodeAlert.BackColor = System.Drawing.Color.Transparent;
+            this.copiedCodeAlert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copiedCodeAlert.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.copiedCodeAlert.Location = new System.Drawing.Point(33, 187);
+            this.copiedCodeAlert.Name = "copiedCodeAlert";
+            this.copiedCodeAlert.Size = new System.Drawing.Size(151, 13);
+            this.copiedCodeAlert.TabIndex = 22;
+            this.copiedCodeAlert.Text = "Texto copiado al Portapapeles";
+            this.copiedCodeAlert.Visible = false;
+            // 
             // codedValue
             // 
             this.codedValue.AutoSize = true;
@@ -368,32 +395,6 @@ namespace Decoder {
             this.label2.TabIndex = 2;
             this.label2.Text = "Codificador";
             // 
-            // copiedDecodeAlert
-            // 
-            this.copiedDecodeAlert.AutoSize = true;
-            this.copiedDecodeAlert.BackColor = System.Drawing.Color.Transparent;
-            this.copiedDecodeAlert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copiedDecodeAlert.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.copiedDecodeAlert.Location = new System.Drawing.Point(33, 188);
-            this.copiedDecodeAlert.Name = "copiedDecodeAlert";
-            this.copiedDecodeAlert.Size = new System.Drawing.Size(151, 13);
-            this.copiedDecodeAlert.TabIndex = 21;
-            this.copiedDecodeAlert.Text = "Texto copiado al Portapapeles";
-            this.copiedDecodeAlert.Visible = false;
-            // 
-            // copiedCodeAlert
-            // 
-            this.copiedCodeAlert.AutoSize = true;
-            this.copiedCodeAlert.BackColor = System.Drawing.Color.Transparent;
-            this.copiedCodeAlert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copiedCodeAlert.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.copiedCodeAlert.Location = new System.Drawing.Point(33, 187);
-            this.copiedCodeAlert.Name = "copiedCodeAlert";
-            this.copiedCodeAlert.Size = new System.Drawing.Size(151, 13);
-            this.copiedCodeAlert.TabIndex = 22;
-            this.copiedCodeAlert.Text = "Texto copiado al Portapapeles";
-            this.copiedCodeAlert.Visible = false;
-            // 
             // DecoderApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,6 +402,7 @@ namespace Decoder {
             this.ClientSize = new System.Drawing.Size(507, 411);
             this.Controls.Add(this.Decodificador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DecoderApp";
             this.Text = "Decoder v1.5";
             this.Decodificador.ResumeLayout(false);
