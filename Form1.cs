@@ -17,5 +17,17 @@ namespace Decoder {
         private void label1_Click(object sender, EventArgs e) {
 
         }
+
+        private void label4_Click(object sender, EventArgs e) {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+
+        }
     }
 }
