@@ -15,18 +15,24 @@ namespace Decoder {
         }
 
         private void buttonDecodeHandleClick(object sender, EventArgs e) {
-            decodeValue.Text = textToDecode.Text + "  " + letterToDecode.Text;
+            string decodedText = "";
+            foreach(string letter in textToDecode.Text.Split('-')) {
+                decodedText = decodedText + decodeLetter(Convert.ToDouble(letter), letterToDecode.Text);
+                Console.WriteLine(decodedText);
+            }
+            decodeValue.Text = decodedText;
             copiedDecodeAlert.Visible = true;
-            Clipboard.SetText("Hello, decoded value");
+            Clipboard.SetText(decodedText);
         }
 
         private void buttonCodeHandleClick(object sender, EventArgs e) {
             string codedText = "";
             foreach(char letter in textToCode.Text) {
-                codedText = codedText + codifyLetter(letter.ToString(), letterToCode.Text).ToString() + " ";
+                codedText = codedText + codifyLetter(letter.ToString(), letterToCode.Text).ToString() + "-";
             }
-            codedValue.Text = codedText;
-            Clipboard.SetText(codedText);
+            string newCoded = codedText.Remove(codedText.Length - 1);
+            codedValue.Text = newCoded;
+            Clipboard.SetText(newCoded);
             copiedCodeAlert.Visible = true;
         }
 
@@ -47,6 +53,22 @@ namespace Decoder {
             return position / 2 + 1.0 + multipliedPosition;
         }
 
-     
+        private string decodeLetter(double letter, string key) {
+            List<string> abecedario = new List<string>() { "a", "b","c", "d", "e", "f", "g", "h", "i", "j", "k",
+                "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+            double multipliedPosition = 0;
+            foreach(string element in abecedario) {
+                if(element == key) {
+                    multipliedPosition = abecedario.IndexOf(element);
+                }
+            }
+            double result = letter * 2 - multipliedPosition - 2;
+            foreach(string element in abecedario) {
+                if(abecedario.IndexOf(element) == result) {
+                    return element;
+                }
+            }
+            return "";
+        }
     }
 }
