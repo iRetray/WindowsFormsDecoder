@@ -18,7 +18,6 @@ namespace Decoder {
             string decodedText = "";
             foreach(string letter in textToDecode.Text.Split('-')) {
                 decodedText = decodedText + decodeLetter(Convert.ToDouble(letter), letterToDecode.Text);
-                Console.WriteLine(decodedText);
             }
             decodeValue.Text = decodedText;
             copiedDecodeAlert.Visible = true;
@@ -27,6 +26,7 @@ namespace Decoder {
 
         private void buttonCodeHandleClick(object sender, EventArgs e) {
             string codedText = "";
+            Console.WriteLine(letterToCode.Text);
             foreach(char letter in textToCode.Text) {
                 codedText = codedText + codifyLetter(letter.ToString(), letterToCode.Text).ToString() + "-";
             }
@@ -45,7 +45,7 @@ namespace Decoder {
                 if(element == letter) {
                     position = abecedario.IndexOf(element);
                 }
-                if(element == key) {
+                if(element == key.ToLower()) {
                     multipliedPosition = abecedario.IndexOf(element);
                 }
             }
@@ -58,7 +58,7 @@ namespace Decoder {
                 "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
             double multipliedPosition = 0;
             foreach(string element in abecedario) {
-                if(element == key) {
+                if(element == key.ToLower()) {
                     multipliedPosition = abecedario.IndexOf(element);
                 }
             }
